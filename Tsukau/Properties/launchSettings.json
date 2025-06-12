@@ -1,0 +1,20 @@
+﻿{
+  "profiles": {
+    "HTTPS": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Tsukau__DefaultUser__Name": "tsukauadmin",
+        "Tsukau__DefaultUser__Password": "tsukauadmin",
+        "Tsukau__Jwt__Issuer": "TsukauDev",
+        "Tsukau__Jwt__Key": "97c58709dbeaa35ebd8fe71e26a62bf0cfb5fd7e5f128a2ef87dfc9ad83d52e8e332f6f9948888d1d364c2a21d53909f79b7d67788530355a508c3877306760e250370d1230a2a2968b4f69a576b023d5b6ef83af82b646946d65c292081dbca40efdc9b131a78e97dca23709f9bb2e867175aa795e8e5b8a1dbbd0a0ffa1cf8"
+      },
+      "dotnetRunMessages": true,
+      "externalUrlConfiguration": true,
+      "applicationUrl": "https://localhost:13337"
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json"
+}

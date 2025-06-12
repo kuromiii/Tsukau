@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "HTTPS",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Tsukau/bin/Debug/net9.0/Tsukau.dll",
+      "cwd": "${workspaceFolder}/Tsukau",
+      "launchSettingsFilePath": "${workspaceFolder}/Tsukau/Properties/launchSettings.json",
+      "launchSettingsProfile": "HTTPS"
+    }
+  ]
+}
