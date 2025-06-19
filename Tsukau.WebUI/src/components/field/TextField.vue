@@ -15,8 +15,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const cssClass = computed(() => ({
-  'pl-12': props.icon != null,
-  'pl-4': props.icon == null,
+  [props.icon ? 'pl-12' : 'pl-4']: true,
 }))
 
 const value = ref('')
