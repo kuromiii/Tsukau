@@ -1,8 +1,9 @@
 import process from 'node:process'
 import { fileURLToPath, URL } from 'node:url'
 
-import vue from '@vitejs/plugin-vue'
 import { defineConfig, loadEnv } from 'vite'
+
+import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import vuetify from 'vite-plugin-vuetify'
 
