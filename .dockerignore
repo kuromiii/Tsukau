@@ -23,7 +23,6 @@
 **/values.dev.yaml
 **/build
 **/dist
-**/webapp
 **/files
 **/static
 LICENSE
