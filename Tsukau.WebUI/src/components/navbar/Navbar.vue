@@ -18,43 +18,46 @@ function toggleMenu() {
       <div class="max-w-7xl mx-auto px-6 bg-indigo-500">
         <div class="flex justify-between h-16">
           <!-- Logo -->
-          <div class="flex items-center">
+          <div class="w-1/4 flex items-center">
             <a href="#" class="text-xl font-semibold text-white">Tsukau</a>
           </div>
 
           <!-- Search bar -->
-          <div class="flex items-center">
+          <div class="w-2/4 flex items-center justify-center">
             <TextField
               :icon="faSearch"
-              class="mx-2 my-2"
+              class="my-2"
               type="text"
-              placeholder="Search for something"
+              placeholder="Search for something..."
+              size="sm"
             />
           </div>
 
-          <!-- Desktop Links -->
-          <div class="hidden md:flex space-x-8 items-center">
-            <a href="#" class="text-gray-200 hover:text-white">Home</a>
-            <a href="#" class="text-gray-200 hover:text-white">About</a>
-          </div>
+          <div class="w-1/4 flex justify-end space-x-4 items-center">
+            <!-- Desktop Links -->
+            <div class="hidden md:flex space-x-8">
+              <a href="#" class="text-gray-200 hover:text-white">Home</a>
+              <a href="#" class="text-gray-200 hover:text-white">About</a>
+            </div>
 
-          <!-- Mobile Menu Button -->
-          <div class="md:hidden flex items-center">
-            <button
-              class="text-gray-200 hover:text-white focus:outline-none"
-              :aria-expanded="isMenuOpen"
-              aria-controls="mobile-menu"
-              @click="toggleMenu"
-            >
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+              <button
+                class="text-gray-200 hover:text-white focus:outline-none"
+                :aria-expanded="isMenuOpen"
+                aria-controls="mobile-menu"
+                @click="toggleMenu"
+              >
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
