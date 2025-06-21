@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
-import TextField from '../field/TextField.vue'
+import TextField from '@/components/field/TextField.vue'
 
 const isMenuOpen = ref(false)
 
@@ -23,7 +23,7 @@ function toggleMenu() {
           </div>
 
           <!-- Search bar -->
-          <div class="">
+          <div class="flex items-center">
             <TextField
               :icon="faSearch"
               class="mx-2 my-2"
