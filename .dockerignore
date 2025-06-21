@@ -25,6 +25,7 @@
 **/dist
 **/files
 **/static
+**/webapp
 LICENSE
 README.md
 !**/.gitignore
