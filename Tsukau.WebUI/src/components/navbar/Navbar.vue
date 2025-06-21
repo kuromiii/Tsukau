@@ -19,7 +19,9 @@ function toggleMenu() {
         <div class="flex justify-between h-16">
           <!-- Logo -->
           <div class="w-1/4 flex items-center">
-            <a href="#" class="text-xl font-semibold text-white">Tsukau</a>
+            <RouterLink to="/">
+              <a class="text-xl font-semibold text-white">Tsukau</a>
+            </RouterLink>
           </div>
 
           <!-- Search bar -->
@@ -36,8 +38,14 @@ function toggleMenu() {
           <div class="w-1/4 flex justify-end space-x-4 items-center">
             <!-- Desktop Links -->
             <div class="hidden md:flex space-x-8">
-              <a href="#" class="text-gray-200 hover:text-white">Home</a>
-              <a href="#" class="text-gray-200 hover:text-white">About</a>
+
+              <RouterLink to="/">
+                <a class="text-gray-200 hover:text-white">Home</a>
+              </RouterLink>
+
+              <RouterLink to="/about">
+                <a class="text-gray-200 hover:text-white">About</a>
+              </RouterLink>
             </div>
 
             <!-- Mobile Menu Button -->
