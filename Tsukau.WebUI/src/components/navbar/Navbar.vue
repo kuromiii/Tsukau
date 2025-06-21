@@ -38,7 +38,6 @@ function toggleMenu() {
           <div class="w-1/4 flex justify-end space-x-4 items-center">
             <!-- Desktop Links -->
             <div class="hidden md:flex space-x-8">
-
               <RouterLink to="/">
                 <a class="text-gray-200 hover:text-white">Home</a>
               </RouterLink>
