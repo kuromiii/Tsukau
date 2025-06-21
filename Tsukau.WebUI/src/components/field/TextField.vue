@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed, ref, type InputTypeHTMLAttribute } from 'vue'
+import type { IconDefinition } from '@fortawesome/free-solid-svg-icons'
 
+import type { InputTypeHTMLAttribute } from 'vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { type IconDefinition } from '@fortawesome/free-solid-svg-icons'
+import { computed, ref } from 'vue'
 
 interface Props {
   placeholder?: string
@@ -29,7 +30,7 @@ const value = ref('')
       :placeholder="props.placeholder"
       :class="cssClass"
       class="w-full pr-4 py-3 rounded-sm shadow-md bg-white text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:shadow-lg transition duration-300"
-    />
+    >
 
     <!-- Icon -->
     <div v-if="icon" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">

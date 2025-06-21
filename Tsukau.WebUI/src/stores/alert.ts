@@ -1,7 +1,7 @@
-import { defineStore } from 'pinia'
-
 import type Alert from '@/models/internal/Alert'
+
 import type AlertState from '@/models/states/AlertState'
+import { defineStore } from 'pinia'
 
 export const useAlertStore = defineStore('alert', {
   state: (): AlertState => ({

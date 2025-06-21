@@ -1,6 +1,6 @@
-import { defineStore } from 'pinia'
-
 import type SettingsState from '@/models/states/SettingsState'
+
+import { defineStore } from 'pinia'
 
 const IGNORED_SETTINGS: string[] = []
 

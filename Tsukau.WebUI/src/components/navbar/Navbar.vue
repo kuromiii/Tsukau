@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+
+import { ref } from 'vue'
 
 import TextField from '@/components/field/TextField.vue'
 
@@ -41,10 +41,10 @@ function toggleMenu() {
           <!-- Mobile Menu Button -->
           <div class="md:hidden flex items-center">
             <button
-              @click="toggleMenu"
               class="text-gray-200 hover:text-white focus:outline-none"
               :aria-expanded="isMenuOpen"
               aria-controls="mobile-menu"
+              @click="toggleMenu"
             >
               <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
