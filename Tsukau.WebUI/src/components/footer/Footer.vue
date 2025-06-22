@@ -4,19 +4,19 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
 
 <template>
-  <footer class="bg-indigo-500 text-gray-200 py-6">
+  <footer class="bg-indigo-500 py-6">
     <div class="text-center mb-4">
-      <a href="https://github.com/kuromiii/Tsukau">
+      <a class="text-gray-200 hover:text-white" href="https://github.com/kuromiii/Tsukau">
         <FontAwesomeIcon class="w-8 h-8" :icon="faGithub" size="xl" />
       </a>
 
-      <a href="https://x.com/_CLAWZ_">
+      <a class="text-gray-200 hover:text-white" href="https://x.com/_CLAWZ_">
         <FontAwesomeIcon class="w-8 h-8" :icon="faXTwitter" size="xl" />
       </a>
     </div>
 
     <!-- Bottom Section -->
-    <div class="text-sm text-center">
+    <div class="text-sm text-center text-gray-200">
       <p>&copy; 2025 Tsukau. Made by kuromiii.</p>
     </div>
   </footer>
